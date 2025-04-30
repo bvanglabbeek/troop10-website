@@ -13,37 +13,135 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="hero">
+				<h1>Experience the Outdoors with Troop 10</h1>
+				<p>Join us for exciting adventures and leadership development</p>
+				<a href="/contact" class="button">Join Us</a>
+			</section>
+
+			<section>
+				<h2>Upcoming Events</h2>
+				<table class="events-table">
+					<thead>
+						<tr>
+							<th>Month</th>
+							<th>Events</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Mar - 2025</td>
+							<td>Scout Challenge - Bert Adams</td>
+						</tr>
+						<tr>
+							<td>Apr - 2025</td>
+							<td>First Year - Scoutland</td>
+						</tr>
+						<tr>
+							<td>May - 2025</td>
+							<td>Pinewood Derby</td>
+						</tr>
+						<tr>
+							<td>Jun - 2025</td>
+							<td>Summer Camp - Woodruff</td>
+						</tr>
+						<tr>
+							<td>Jul - 2025</td>
+							<td>Tubing/Kayaking - Appalachian Outfitters</td>
+						</tr>
+						<tr>
+							<td>Aug - 2025</td>
+							<td>Whitewater - Ocoee/Nantahala</td>
+						</tr>
+						<tr>
+							<td>Sep - 2025</td>
+							<td>Zipline - Highlands Aerial Park</td>
+						</tr>
+						<tr>
+							<td>Oct - 2025</td>
+							<td>Woodruff - Dump Camp</td>
+						</tr>
+						<tr>
+							<td>Nov - 2025</td>
+							<td>Aviation - Warner Robins AFB</td>
+						</tr>
+						<tr>
+							<td>Dec - 2025</td>
+							<td>Aquarium</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2>About BSA Troop 10</h2>
+				<p>
+					BSA Troop 10 is chartered through St. Benedict Catholic Church in Johns Creek, GA. 
+					It was started in 2000 and offers a unique and diverse outdoor experience for scouting. 
+					Our small size and focus on individual attention provide opportunities for youth to become 
+					future leaders and fosters a love for the environment. Our program is designed to challenge 
+					and inspire scouts of all ages in a safe and nurturing environment.
+				</p>
+				<p>
+					Come join us at a troop meeting. Troop 10 meets at St. Benedict Catholic Church at 7:30 PM 
+					every Tuesday at the Parish Life Center.
+				</p>
+			</section>
+
+			<section>
+				<h2>Troop 10 Principles</h2>
+				<table class="principles-table">
+					<thead>
+						<tr>
+							<th>Principle</th>
+							<th>Scouts</th>
+							<th>Adults</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Go Outside</td>
+							<td>It's beautiful outside, go</td>
+							<td>It's beautiful outside, go</td>
+						</tr>
+						<tr>
+							<td>Work as a Patrol, Work as a Troop</td>
+							<td>If it's not working, you can fix it, your team can help</td>
+							<td>Let it be a mess, let them decide when to fix it</td>
+						</tr>
+						<tr>
+							<td>Glass Half Full</td>
+							<td>Assume positive intent</td>
+							<td>Assume positive intent</td>
+						</tr>
+						<tr>
+							<td>Be Pragmatic</td>
+							<td>Progress over perfection</td>
+							<td>Progress over perfection (remember 100% Scout led)</td>
+						</tr>
+						<tr>
+							<td>Community over Self</td>
+							<td>Give back a little</td>
+							<td>Give back a little</td>
+						</tr>
+						<tr>
+							<td>Have Fun</td>
+							<td>Have Fun</td>
+							<td>Have Fun</td>
+						</tr>
+						<tr>
+							<td>Learn by Doing</td>
+							<td>You will make mistakes, learn from them</td>
+							<td>They will mess up, if older Scouts coach them we all win</td>
+						</tr>
+						<tr>
+							<td>100% Youth Led</td>
+							<td>Ask your SPL</td>
+							<td>Let them decide</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
 		</main>
 		<Footer />
 	</body>
