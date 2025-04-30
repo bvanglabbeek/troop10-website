@@ -1,0 +1,33 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).filter(post => post.data.category === 'Newsletter').sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<Header />
+<main>
+  <section class="hero">
+    <h1>Troop 10 Newsletters</h1>
+    <p>Read our latest troop newsletters and updates.</p>
+  </section>
+  <section>
+    <ul>
+      {posts.length === 0 && <li>No newsletters found.</li>}
+      {posts.map(post => (
+        <li>
+          <a href={`/news/${post.id}/`}>
+            <h2>{post.data.title}</h2>
+            <p><FormattedDate date={post.data.pubDate} /></p>
+            <p>{post.data.description}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</main>
+<Footer /> 

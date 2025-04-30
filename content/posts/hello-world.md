@@ -1,9 +1,9 @@
 ---
-title: Hello, World!
+title: 'Hello, World!'
 description: A test post to demonstrate the blog functionality
-pubDate: 2024-04-30
+pubDate: 2024-04-30T00:00:00.000Z
 heroImage: /images/blog-placeholder-1.jpg
-category: General
+category: Newsletter
 ---
 
 ## Hello World!

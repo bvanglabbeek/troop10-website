@@ -1,9 +1,9 @@
 ---
-title: This is a test post
-description: Another test post to demonstrate the blog functionality
-pubDate: 2024-04-30
-heroImage: /placeholder-hero.jpg
-category: General
+title: Scoutland First Year Campout
+description: Scoutland First Year Campout
+pubDate: 2024-04-30T00:00:00.000Z
+heroImage: /images/IMG_2067.jpeg
+category: Campout
 ---
 
-Hi there
+We had such a blast at Scoutland
