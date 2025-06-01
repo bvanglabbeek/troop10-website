@@ -6,5 +6,5 @@ heroImage: /images/IMG_2067.jpeg
 category: Campout
 ---
 
-We had such a blast at Scoutland! We learned a lot, cooked great food, and have truly experienced the beauty of the outdoors and nature. 🏕️
+We had such a blast at Scoutland! We learned a lot, cooked great food, and have truly experienced the beauty of the outdoors and nature. 🏕️ Experience the outdoors with Troop 10! ⛺️
 
