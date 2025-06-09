@@ -4,17 +4,19 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header>
+<header style="background-color: #004080;">
 	<nav>
 		<a href="/" class="logo">
-			<img src="/images/bsa-logo.png" alt="BSA Troop 10 Logo" height="40" />
+			<img src="/images/bsa-logo.png" alt="BSA Troop 10 Logo" height="40" style="padding: 0%;"/>
 		</a>
+		<label style="color: white; font-size:larger; font-weight: bolder;">Troop 10</label>
 		<ul>
-			<li><HeaderLink href="/">Home</HeaderLink></li>
-			<li><HeaderLink href="/about">About</HeaderLink></li>
-			<li><HeaderLink href="/events">Events</HeaderLink></li>
-			<li><HeaderLink href="/news">News</HeaderLink></li>
-			<li><HeaderLink href="/contact">Contact</HeaderLink></li>
+			<HeaderLink href="/" style={{ color: 'white', textDecoration: 'none' }}>Home</HeaderLink>
+
+			<HeaderLink href="/" style={{ color: 'white', textDecoration: 'none' }}>About</HeaderLink>
+			<HeaderLink href="/" style={{ color: 'white', textDecoration: 'none' }}>Events</HeaderLink>
+			<HeaderLink href="/" style={{ color: 'white', textDecoration: 'none' }}>News</HeaderLink>
+			<HeaderLink href="/" style={{ color: 'white', textDecoration: 'none' }}>Contacts</HeaderLink>
 		</ul>
 	</nav>
 </header>
