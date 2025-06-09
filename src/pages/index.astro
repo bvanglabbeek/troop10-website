@@ -1,148 +1,175 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section class="hero">
-				<h1>Experience the Outdoors with Troop 10</h1>
-				<p>Join us for exciting adventures and leadership development</p>
-				<a href="/contact" class="button">Join Us</a>
-			</section>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section class="hero">
+        <h1>Experience the Outdoors with Troop 10</h1>
+        <p>Join us for exciting adventures and leadership development</p>
+        <a href="/contact" class="button">Join Us</a>
+      </section>
+      <section>
+        <div style="display: flex; align-items: flex-start;">
+          <div style="flex: 1; padding-right: 20px;">
+            <h2 style="margin-top: 0;">About BSA Troop 10</h2>
+            <p>
+              BSA Troop 10 is chartered through St. Benedict Catholic Church in
+              Johns Creek, GA. It was started in 2000 and offers a unique and
+              diverse outdoor experience for scouting. Our small size and focus
+              on individual attention provide opportunities for youth to become
+              future leaders and fosters a love for the environment. Our program
+              is designed to challenge and inspire scouts of all ages in a safe
+              and nurturing environment.
+            </p>
+            <p>
+              <u>Come join us</u> at a troop meeting. Troop 10 meets at St. Benedict
+              Catholic Church at <b>7:30 PM every Tuesday</b> at the Parish Life
+              Center.
+            </p>
+          </div>
+          <div style="flex-shrink: 0; align-self: center;">
+            <img
+              src="/images/img_Troop1025.png"
+              alt="BSA Troop 10 25 years"
+              width="200"
+              style="max-width: 100%; height: auto; margin-top:50px"
+            />
+          </div>
+        </div>
+      </section>
 
-			<section>
-				<h2>Upcoming Events</h2>
-				<table class="events-table">
-					<thead>
-						<tr>
-							<th>Month</th>
-							<th>Events</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Mar - 2025</td>
-							<td>Scout Challenge - Bert Adams</td>
-						</tr>
-						<tr>
-							<td>Apr - 2025</td>
-							<td>First Year - Scoutland</td>
-						</tr>
-						<tr>
-							<td>May - 2025</td>
-							<td>Pinewood Derby</td>
-						</tr>
-						<tr>
-							<td>Jun - 2025</td>
-							<td>Summer Camp - Woodruff</td>
-						</tr>
-						<tr>
-							<td>Jul - 2025</td>
-							<td>Tubing/Kayaking - Appalachian Outfitters</td>
-						</tr>
-						<tr>
-							<td>Aug - 2025</td>
-							<td>Whitewater - Ocoee/Nantahala</td>
-						</tr>
-						<tr>
-							<td>Sep - 2025</td>
-							<td>Zipline - Highlands Aerial Park</td>
-						</tr>
-						<tr>
-							<td>Oct - 2025</td>
-							<td>Woodruff - Dump Camp</td>
-						</tr>
-						<tr>
-							<td>Nov - 2025</td>
-							<td>Aviation - Warner Robins AFB</td>
-						</tr>
-						<tr>
-							<td>Dec - 2025</td>
-							<td>Aquarium</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
-
-			<section>
-				<h2>About BSA Troop 10</h2>
-				<p>
-					BSA Troop 10 is chartered through St. Benedict Catholic Church in Johns Creek, GA. 
-					It was started in 2000 and offers a unique and diverse outdoor experience for scouting. 
-					Our small size and focus on individual attention provide opportunities for youth to become 
-					future leaders and fosters a love for the environment. Our program is designed to challenge 
-					and inspire scouts of all ages in a safe and nurturing environment.
-				</p>
-				<p>
-					Come join us at a troop meeting. Troop 10 meets at St. Benedict Catholic Church at 7:30 PM 
-					every Tuesday at the Parish Life Center.
-				</p>
-			</section>
-
-			<section>
-				<h2>Troop 10 Principles</h2>
-				<table class="principles-table">
-					<thead>
-						<tr>
-							<th>Principle</th>
-							<th>Scouts</th>
-							<th>Adults</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Go Outside</td>
-							<td>It's beautiful outside, go</td>
-							<td>It's beautiful outside, go</td>
-						</tr>
-						<tr>
-							<td>Work as a Patrol, Work as a Troop</td>
-							<td>If it's not working, you can fix it, your team can help</td>
-							<td>Let it be a mess, let them decide when to fix it</td>
-						</tr>
-						<tr>
-							<td>Glass Half Full</td>
-							<td>Assume positive intent</td>
-							<td>Assume positive intent</td>
-						</tr>
-						<tr>
-							<td>Be Pragmatic</td>
-							<td>Progress over perfection</td>
-							<td>Progress over perfection (remember 100% Scout led)</td>
-						</tr>
-						<tr>
-							<td>Community over Self</td>
-							<td>Give back a little</td>
-							<td>Give back a little</td>
-						</tr>
-						<tr>
-							<td>Have Fun</td>
-							<td>Have Fun</td>
-							<td>Have Fun</td>
-						</tr>
-						<tr>
-							<td>Learn by Doing</td>
-							<td>You will make mistakes, learn from them</td>
-							<td>They will mess up, if older Scouts coach them we all win</td>
-						</tr>
-						<tr>
-							<td>100% Youth Led</td>
-							<td>Ask your SPL</td>
-							<td>Let them decide</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
-		</main>
-		<Footer />
-	</body>
+      <section>
+        <h2>Events(2025)</h2>
+        <table class="events-table">
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Events</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mar - 2025</td>
+              <td>Scout Challenge - Bert Adams</td>
+            </tr>
+            <tr>
+              <td>Apr - 2025</td>
+              <td>First Year - Scoutland</td>
+            </tr>
+            <tr>
+              <td>May - 2025</td>
+              <td>Pinewood Derby</td>
+            </tr>
+            <tr>
+              <td>Jun - 2025</td>
+              <td>Summer Camp - Woodruff</td>
+            </tr>
+            <tr>
+              <td>Jul - 2025</td>
+              <td>Tubing/Kayaking - Appalachian Outfitters</td>
+            </tr>
+            <tr>
+              <td>Aug - 2025</td>
+              <td>Whitewater - Ocoee/Nantahala</td>
+            </tr>
+            <tr>
+              <td>Sep - 2025</td>
+              <td>Zipline - Highlands Aerial Park</td>
+            </tr>
+            <tr>
+              <td>Oct - 2025</td>
+              <td>Woodruff - Dump Camp</td>
+            </tr>
+            <tr>
+              <td>Nov - 2025</td>
+              <td>Aviation - Warner Robins AFB</td>
+            </tr>
+            <tr>
+              <td>Dec - 2025</td>
+              <td>Aquarium</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <div style="display: flex; align-items: center;">
+          <h2 style="margin: 0;">Troop 10 Principles</h2>
+          <img
+            src="/images/img_learnbydoing.png"
+            alt="BSA Troop 10 25 years"
+            width="140"
+            style="margin-left: 120px;"
+          />
+          <img
+            src="/images/img_Youth.png"
+            alt="BSA Troop 10 25 years"
+            width="140"
+            style="margin-left: 120px;"
+          />
+        </div>
+        <table class="principles-table">
+          <thead>
+            <tr>
+              <th>Principle</th>
+              <th>Scouts</th>
+              <th>Adults</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Go Outside</td>
+              <td>It's beautiful outside, go</td>
+              <td>It's beautiful outside, go</td>
+            </tr>
+            <tr>
+              <td>Work as a Patrol, Work as a Troop</td>
+              <td>If it's not working, you can fix it, your team can help</td>
+              <td>Let it be a mess, let them decide when to fix it</td>
+            </tr>
+            <tr>
+              <td>Glass Half Full</td>
+              <td>Assume positive intent</td>
+              <td>Assume positive intent</td>
+            </tr>
+            <tr>
+              <td>Be Pragmatic</td>
+              <td>Progress over perfection</td>
+              <td>Progress over perfection (remember 100% Scout led)</td>
+            </tr>
+            <tr>
+              <td>Community over Self</td>
+              <td>Give back a little</td>
+              <td>Give back a little</td>
+            </tr>
+            <tr>
+              <td>Have Fun</td>
+              <td>Have Fun</td>
+              <td>Have Fun</td>
+            </tr>
+            <tr>
+              <td>Learn by Doing</td>
+              <td>You will make mistakes, learn from them</td>
+              <td>They will mess up, if older Scouts coach them we all win</td>
+            </tr>
+            <tr>
+              <td>100% Youth Led</td>
+              <td>Ask your SPL</td>
+              <td>Let them decide</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
