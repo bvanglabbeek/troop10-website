@@ -389,12 +389,15 @@ footer {
 a.header-link {
   display: inline-block;
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 a.header-link.active {
   font-weight: bolder;
   text-decoration: underline;
 }
-
+a.header-link:hover {
+  transform: translateY(-5px);
+}
 .logo img {
   height: 40px;      /* or whatever looks best for your header */
   max-width: 120px;  /* optional: prevents it from being too wide */
