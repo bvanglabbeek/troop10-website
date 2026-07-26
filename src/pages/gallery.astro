@@ -11,7 +11,29 @@ import FormattedDate from "../components/FormattedDate.astro";
             <h1>Gallery</h1>
             <p>Explore our photo gallery from past events and adventures.</p>
         </section>
-        <h1>Troop 10 Adventures</h1>
-        
+        <h3>2025</h3>
+        <div class="gallery-item">
+          <button id="gallery-expand-button" type="button" class="expand-link" aria-expanded="false">
+            <img src="/fonts/icons/expand-more.svg" alt="" width="16" height="16" />
+            <span>Conservation Weekend</span>
+          </button>
+          <div id="gallery-preview" class="gallery-preview" hidden>
+            <img src="/images/gallery/cons-weekend_2026/fatherson.jpg" alt="Conservation Weekend 2026" />
+            <img src="/images/gallery/cons-weekend_2026/eagle.jpg" alt="Conservation Weekend 2026" />
+          </div>
+        </div>
     </html>
 </main>
+
+<script>
+  const button = document.getElementById('gallery-expand-button');
+  const preview = document.getElementById('gallery-preview');
+
+  if (button && preview) {
+    button.addEventListener('click', () => {
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!isExpanded));
+      preview.hidden = isExpanded;
+    });
+  }
+</script>
